@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AgriBridge</string>
+    <string name="agribridge">AgriBridge</string>
+    <string name="ariculture">agribridge</string>
+    <string name="by_continuing_you_agree_to_our_terms_of_service_privacy_policy">By continuing, you agree to our Terms of Service, Privacy Policy</string>
+    <string name="google">Google</string>
+    <string name="more">More</string>
+    <string name="or">or</string>
+    <string name="contin">Continue</string>
+    <string name="conti">continue</string>
+    <string name="i_have_read_and_agree_to_the_terms_and_conditions">I have read and agree to the Terms and Conditions</string>
+    <string name="con">Continue</string>
+    <string name="by_using_this_app_you_agree_to_maintain_the_quality_of_the_grains_you_sell_and_avoid_fraudulent_practices_violations_will_result_in_penalties_or_account_suspension">By using this app, you agree to maintain the quality of the grains you sell and avoid fraudulent practices. Violations will result in penalties or account suspension.</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".MainActivity">
+
+    <!-- Top illustrations -->
+
+    <!-- App Name -->
+    <ImageView
+        android:id="@+id/topIllustration"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="126dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/topIllustration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/ariculture"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agribridge"
+        android:layout_below="@+id/topIllustration"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Phone Input -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subTitle"
+        android:layout_marginTop="133dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/countryCodeSpinner"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/country_codes" />
+
+        <EditText
+            android:id="@+id/phoneNumberInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:hint="Enter Phone Number"
+
+            android:inputType="phone"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subTitle"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="253dp"
+        android:text="@string/conti"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/socialMediaButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/continueButton"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/googleLoginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/google"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/moreLoginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/more"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Footer Terms -->
+    <TextView
+        android:id="@+id/footerTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/by_continuing_you_agree_to_our_terms_of_service_privacy_policy"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
