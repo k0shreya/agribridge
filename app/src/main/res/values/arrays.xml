@@ -1,0 +1,17 @@
+<resources>
+    <string-array name="quantity_options">
+        <item>&lt;10 quintals</item>
+        <item>10–40 quintals</item>
+        <item>&gt;40 quintals</item>
+    </string-array>
+
+    <!-- Add this for Crop Options -->
+    <string-array name="crops">
+        <item>Rice</item>
+        <item>Wheat</item>
+        <item>Maize (Corn)</item>
+        <item>Barley</item>
+        <item>Millets (e.g., Bajra, Jowar)</item>
+        <item>Oats</item>
+    </string-array>
+</resources>

@@ -1,0 +1,190 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProfilesActivity">
+
+    <!-- AgriHub Image and Profile Icon with Background Color -->
+
+    <!-- Search Bar with Microphone Icon -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <!-- AgriHub Image -->
+        <ImageView
+            android:id="@+id/agriHubImage"
+            android:layout_width="246dp"
+            android:layout_height="40dp"
+            android:contentDescription="AgriHub Logo"
+            android:src="@drawable/img_7" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:contentDescription="Profile Icon"
+            android:src="@drawable/img_4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Search Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/img_6"
+            android:contentDescription="Search Icon" />
+
+        <!-- Search Input -->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Search for 'Wheat'"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@android:color/transparent"
+            android:minHeight="48dp"
+            android:gravity="center_vertical" />
+
+        <!-- Microphone Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Microphone Icon"
+            android:src="@drawable/img_5" />
+    </LinearLayout>
+
+    <!-- "Start Your Journey" Text with Background Color -->
+    <TextView
+        android:id="@+id/startJourneyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D68BC34A"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Start Your Journey"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Grid of Products -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingTop="16dp">
+
+        <!-- Wheat Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openWheatPage"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wheat"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Maize Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openMaizePage"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/img_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maize"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Paddy Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openPaddyPage"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/img_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paddy"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Groundnut Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openGroundnutPage"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:src="@drawable/img_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Groundnut"
+                android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>
