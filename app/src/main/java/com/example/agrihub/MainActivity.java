@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
                 R.array.crops, // Referring to the new string-array in resources for crops
                 android.R.layout.simple_spinner_item
         );
-
+//this is laxmiprasanna
         // Set the dropdown style for the spinner
         cropAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
