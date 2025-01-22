@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_spinner_item
         );
 //this is laxmiprasanna
+        //this is gayathri
         // Set the dropdown style for the spinner
         cropAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
